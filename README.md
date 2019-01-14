@@ -6,3 +6,6 @@ All processing was completed on the [Bianca](http://www.uppmax.uu.se/resources/s
 I have yet to be able to figure out how to do multi-node parallizaton with freesurfer.
 I found many helpful resources on parallization that work within node.
 
+<br>
+
+This is a bit premature since you don't have them all processed some failed.
