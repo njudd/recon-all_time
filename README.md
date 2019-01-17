@@ -8,4 +8,7 @@ I found many helpful resources on parallization that work within node.
 
 <br>
 
-This is a bit premature since you don't have them all processed some failed.
+The data is not directly comparable, since there is attrition due to failed scans!
+
+```cat reconall_bianca/sim_subs_r.txt | parallel "tail -n1 /proj/sens2018615/imagen_longpipe/{}/scripts/recon-all.log | grep 'without error'" | awk '{print $3}' | parallel "tail -n2 /proj/sens2018615/imagen_longpipe/{}/scripts/recon-all.log | head -n1" | awk '{print $3}' > base_time.txt```
+
