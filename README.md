@@ -1,4 +1,4 @@
-# Recon-all Processing Time
+# Recon-all Processing Time & slurm jobs for freesurfer.
 Looking at how long the freesurfer longitudinal pipeline takes.
 
 All processing was completed on the [Bianca](http://www.uppmax.uu.se/resources/systems/the-bianca-cluster/) HPC, which is part of the [Swedish National Infrastructure for Computing](https://www.snic.se/).
