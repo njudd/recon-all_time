@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
-import seaborn as sea
+import seaborn as sns
+import matplotlib as plt
+
 
 # loading data, vectors are unequal length due to processing failures
 # this is just a rough check but those subjects should be entirely excluded
@@ -29,7 +31,14 @@ long_recon = long_recon[~np.isnan(long_recon)]
 
 # Histograms of different processing times, with average value clearly marked for the 3 processes
 
-t['MRI1']
+sns.set_style("white")
+
+hist_standard = sns.distplot(standard_recon, norm_hist=True)
+hist_base = sns.distplot(base, norm_hist=True)
+hist_long = sns.distplot(long_recon, norm_hist=True)
+
+
+plt.axvline(2.8, 0,0.17)
 
 
 
